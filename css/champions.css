@@ -1,0 +1,189 @@
+/*champions page
+==================*/
+.chart{
+    padding: 15px;
+    border-bottom: solid 1px #eee;
+}
+.chart h5{
+    text-align: center;
+    color: #c24217;
+}
+section.champ_widget{
+    margin: 20px 0;
+}
+.champ_widget .title_cont{
+    background-color: #d2d2d2;
+    padding: 7px 10px;
+    color: #666666;
+    position: relative;
+}
+.champ_widget .title_cont h2{
+    font-size: 20px;
+    display: inline;
+    margin-right: 65px;
+    font-family: "DinNext";
+}
+.champ_widget.active .title_cont{
+    background-color:#c24217 ;
+    color: #fff;
+}
+.champ_widget.fb_widget .title_cont{
+    background-color:#3460a1;
+    color: #fff;
+}
+.champ_widget .title_cont > span{
+    display: inline-block;
+    float: left;
+}
+.champ_body{
+    border: solid 2px #e5e5e5;
+    padding: 10px;
+}
+.champ_widget .stage_icon{
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    padding: 0 4px;
+    overflow: hidden;
+    border-radius: 55px;
+    background-color: #fff;
+    position: absolute;
+    right: 10px;
+    top: -25px;
+    z-index: 1;
+    box-shadow: 0 0 0 2px rgba(0,0,0,.1) inset, 0 4px 0 rgba(0,0,0,.15);
+    text-align: center;
+}
+.stage_icon svg{
+    vertical-align: middle;
+    margin: 0 4px;
+}
+.stage_icon .fb{
+    width: 13px;
+    fill:#3460a1;
+}
+.stage_icon .stage_1{
+    width: 100px;
+    position: absolute;
+    right: -23px;
+    top: -8px;
+}
+.stage_icon .stage_2{
+    width: 70px;
+    position: absolute;
+    right: -11px;
+    top: 0;
+}
+.stage_icon .stage_3{
+    width: 120px;
+    position: absolute;
+    right: -36px;
+    top: 10px;
+}
+.champ_body p.msg{
+    color: #8c8c8c;
+    text-align: center;
+    padding: 0 10px;
+    font-size: inherit;
+}
+
+
+/*leaderboard ul*/
+.inner_page .leaderBoard{
+    list-style-type: none;
+    margin: 0 10px;
+    padding: 0;
+}
+.leaderBoard li{
+    padding: 10px 0;
+    border-bottom: dotted 1px #eee;
+}
+.leaderBoard .user_info{
+    text-align: right;
+    display: inline-block;
+    font-family: 'DinNextBold';
+    position: relative;
+}
+.leaderBoard .user_info:hover{
+    text-decoration: none;
+}
+.leaderBoard .img-circle{
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+    box-shadow: 0 0 0 2px rgba(0,0,0,.1) ;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.leaderBoard .points{
+    display: inline-block;
+    float: left;
+    padding: 15px 0;
+    text-align: center;
+}
+.leaderBoard .points .num{
+    display:block;
+    line-height: 0;
+}
+.leaderBoard .nm_wk{
+    display: inline-block;
+    vertical-align: middle;
+}
+.leaderBoard .nm_wk p{
+    font-size: 1em;
+    margin: 0;
+    padding: 0;
+    line-height: 20px;
+}
+.leaderBoard .nm_wk span{
+    font-size: .7em;
+}
+.leaderBoard .order{
+    display: inline-block;
+    background-color: #fff;
+    border: solid 2px #ccc;
+    border-radius: 50px;
+    color: #080808;
+    text-align: center;
+    vertical-align: middle;
+    float: none;
+    padding: 8px;
+    line-height: 8px;
+    position: absolute;
+    font-weight: bold;
+    font-size: 12px;
+    right: -10px;
+    top: 12px;
+    font-family:tahoma;
+}
+.leaderBoard li:hover .order{
+    background-color: #dc4b1a;
+    border-color:#dc4b1a;
+    color: #fff;
+}
+.leaderBoard li:last-child {
+    border: none;
+}
+
+
+
+/* ==========================================================================
+   Media queries
+   ========================================================================== */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .leaderBoard .priz{
+        display: inline-block;
+    }
+    .fiveChamp_cont{
+        display: block;
+    }
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+}

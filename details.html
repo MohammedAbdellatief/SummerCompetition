@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>  تفاصيل المسابقة  </title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/details.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!--Ajaxing for SVG Sprite ... placed before body to load icons quick-->
+    <script type="text/javascript">
+        var ajax = new XMLHttpRequest();
+        ajax.open("GET", "img/sprite.svg", true);
+        ajax.send();
+        ajax.onload = function(e) {
+            var div = document.createElement("div");
+            div.innerHTML = ajax.responseText;
+            document.body.insertBefore(div, document.body.childNodes[0]);
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <div id="wrapper" class="toggled transition">
+        <div class="mobile_header">
+            <a class="logo" href="#">
+                <h1 class="text-hide">الاضواء</h1>
+                <svg class="logo_icon" viewBox="0 0 195 95">
+                    <use xlink:href="#aladwaa_logo" />
+                </svg>
+            </a>
+            <a class="navicon-button x" href="#" id="menu-toggle"><div class="navicon"></div> </a>
+        </div>
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper" class="transition">
+            <div class="sidebar-brand">
+                <a href="#">
+                    <h1 class="text-hide">الاضواء</h1>
+                    <svg class="logo_icon" viewBox="0 0 195 95">
+                        <use xlink:href="#aladwaa_logo" />
+                    </svg>
+                </a>
+            </div>
+            <div class="user_area">
+                <a href="#" class="user_info">
+                    <div class="img-circle">
+                        <img src="img/default_user.png" alt=""/>
+                    </div>
+                    <small>اسم المستخدم</small>
+                </a>
+                <div class="mor_container">
+                    <ul class="vert_num list-unstyled">
+                        <li>
+                            <span>المركز</span>
+                            <strong class="num">124</strong>
+                        </li>
+                        <li>
+                            <span>النقاط</span>
+                            <strong class="num">215</strong>
+                        </li>
+                    </ul>
+                    <ul class="horz_num list-unstyled mor_content">
+                        <li>
+                            <span>عدد المشتركين</span>
+                            <strong class="num">121</strong>
+                        </li>
+                        <li>
+                            <span>وسائل المساعدة</span>
+                            <strong class="num">215</strong>
+                        </li>
+                    </ul>
+                </div>
+                <a class="more_link" href="#"> المزيد</a>
+
+            </div>
+            <ul class="sidebar-nav">
+                <li>
+                    <a href="index.html">
+                        <i class="nav_icon">
+                            <svg viewBox="0 0 32 32">
+                                <use xlink:href="#comp_levels" />
+                            </svg>
+                        </i>
+                        <span class="transition">مراحل المسابقة</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="active" href="details.html">
+                        <i class="nav_icon">
+                            <svg viewBox="0 0 32 32">
+                                <use xlink:href="#list_icon" />
+                            </svg>
+                        </i>
+                        <span class="transition">تفاصيل  المسابقة</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="champions2.html">
+                        <i class="nav_icon">
+                            <svg viewBox="0 0 32 32">
+                                <use xlink:href="#meda_icon" />
+                            </svg>
+                        </i>
+                        <span class="transition">قائمة الأبطال </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="prizes.html">
+                        <i class="nav_icon">
+                            <svg viewBox="0 0 158 195">
+                                <use xlink:href="#cup_icon" />
+                            </svg>
+                        </i>
+                        <span class="transition">جوائز  المسابقة</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="social_share">
+                <small>شارك المسابقة مع اصدقائك</small>
+                <a class="facebook_icon" href="#">
+                    <svg viewBox="0 0 14 29">
+                        <use xlink:href="#facbook_icon" />
+                    </svg>
+                </a>
+                <a class="twitter_icon" href="#">
+                    <svg viewBox="0 0 24 20">
+                        <use xlink:href="#twitter_icon" />
+                    </svg>
+                </a>
+                <a class="google_icon" href="#">
+                    <svg viewBox="0 0 24 23">
+                        <use xlink:href="#google_icon" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper" class="transition">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="sponsor">
+                            <a class="closeAd transition" href="#">اغلق الاعلان</a>
+                            <img src="img/sponsor_1.jpg" alt=""/>
+                        </div>
+                    </div>
+                </div>
+                <div class="main_container inner_page details_page">
+                    <div class="row">
+                        <section>
+                            <h1 class="heading_1">تفاصيل المسابقة</h1>
+                            <h2 class="heading_2"><span> تعريف بالمسابقة </span></h2>
+                            <p>اختبر ذكاءك وقدراتك العقلية الآن مع "مسابقة اختبار العباقرة" وضاعف نقاطك على بوابة الأضواء التعليمية لتستبدلها بالهدايا القيمة من "المتجر". سيعرض عليك 15 سؤالاً "اختيار من متعدد"، حاول الإجابة عن أكبر عدد ممكن من الأسئلة في 7 دقائق لتكون من الفائزين بآلاف النقاط. سيتم إعلان أسماء 15 فائز (3 فائزين لكل مركز) الحاصلين على أعلى الدرجات</p>
+                            <p>اختبر ذكاءك وقدراتك العقلية الآن مع "مسابقة اختبار العباقرة" وضاعف نقاطك على بوابة الأضواء التعليمية لتستبدلها بالهدايا القيمة من "المتجر". سيعرض عليك 15 سؤالاً "اختيار من متعدد"، حاول الإجابة عن أكبر عدد ممكن من الأسئلة في 7 دقائق لتكون من الفائزين بآلاف النقاط. سيتم إعلان أسماء 15 فائز (3 فائزين لكل مركز) الحاصلين على أعلى الدرجات</p>
+                            <h2 class="heading_2"><span>شروط المسابقة</span></h2>
+                            <ul>
+                                <li>تبدأ المسابقة في 27 / 4 / 2015 ويتم غلق باب المشاركة يوم 17 / 5 / 2015.</li>
+                                <li>سيتم إعلان نتيجة المسابقة يوم 18 / 5 / 2015.</li>
+                                <li>يُسمح بالتسجيل لكل المستخدمين.</li>
+                                <li>يجب على المشترك استكمال جميع بيانات الاتصال، خاصة الهاتف.</li>
+                                <li>تتكون المسابقة من 15 سؤالاً اختياريًّا بإجابة صحيحة واحدة فقط.</li>
+                                <li>مدة الإجابة عن جميع الأسئلة 7 دقائق، ولا يشترط الإجابة عن كل الأسئلة.</li>
+                                <li>تختار اللجنة الفائزين الخمسة عشر بأعلى الدرجات وبأسبقية المشاركة.</li>
+                                <li>لا يحق للمشاركين مراجعة اللجنة في الاختيار.</li>
+                                <li>جوائز المسابقة عبارة عن نقاط يتم استبدال أيٍّ من المنتجات والهدايا المتوافرة على متجر الأضواء بها، ولا يجوز 			استخدامها بأي طريقة أخرى.</li>
+                                <li>	لا يحق للفائزين طلب استبدال النقاط بأي شكل آخر، ولا يُمنح الفائز أي جائزة إلا من متجر الأضواء.</li>
+                                <li>	تمتد صلاحية النقاط لستة أشهر فقط، ولا يمكنك الاستفادة منها بعد انقضاء هذه المدة.</li>
+                                <li>	تتطبق الشروط والأحكام العامة لمسابقات الأضواء.</li>
+                            </ul>
+                        </section>
+                    </div>
+                </div>
+                <footer>
+                    <a class="footer_logo" href="#">
+                        <h1 class="text-hide">الاضواء</h1>
+                        <svg class="logo_icon" viewBox="0 0 195 95">
+                            <use xlink:href="#aladwaa_logo" />
+                        </svg>
+                    </a>
+                    <small>جميع الحقوق محفوظة © 2014 </small>
+                </footer>
+            </div>
+            <div class="sponsor_fixed">
+                <img src="img/sponsor2.jpg" alt=""/>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="js/app.js"></script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+</body>
+
+</html>

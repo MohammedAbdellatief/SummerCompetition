@@ -1,0 +1,261 @@
+/*competition page
+==================*/
+.top_artwork{
+    background-color: #07beff;
+    padding-top: 25px;
+}
+.speach_pupple{
+    background-color: #fff;
+    border-radius: 100px;
+    box-shadow:0 -40px 0 rgba(0,0,0,.03) inset, 0 4px 0 rgba(0,0,0,.1);
+    padding: 20px 10%;
+    margin: 0 10% -30px;
+    position: relative;
+    text-align: center;
+}
+.speach_pupple .close_btn{
+    position: absolute;
+    left: 7%;
+    top: 20%;
+    width: 13px;
+    opacity: .3;
+}
+.speach_pupple .close_btn:hover{
+    opacity: .5;
+}
+.speach_pupple h3{
+    margin: 10px 0;
+}
+.speach_pupple p{
+    font-size: 1.3em;
+    margin: 7px;
+}
+.pupple_tri{
+    width: 30px;
+    position: absolute;
+    bottom: -30px;
+    right: 35%;
+}
+.competition_page{
+    background-color: #f4d297;
+}
+.segment{
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 0 3px 0 rgba(0,0,0,.15);
+    padding: 10px;
+    margin: 0 20px;
+    position: relative;
+}
+.segment .more_link{
+    margin: auto;
+    text-align: center;
+    padding: 7px 0;
+    display: block;
+    clear: both;
+}
+.segment:hover .more_link{
+    display: block;
+}
+.segment .mor_container{
+    height: 0;
+    padding: 0;
+}
+.segment .mor_content{
+    background-color: #f7f7f7;
+    border-radius: 25px;
+    padding: 15px 15px 25px;
+}
+.segment .mor_container.show_content{
+}
+.stage_unit.stage_icon{
+    text-align: center;
+    padding: 0 10px;
+}
+.stage_unit{
+    height: auto;
+    padding: 5px;
+    text-align: center;
+}
+.stage_icon svg{
+    width:100%;
+    max-width: 140px;
+    margin-top: 10px;
+}
+.segment small{
+    white-space: nowrap;
+}
+.segment h2{
+    margin-top: 5px;
+}
+.segment h4{
+    margin: 15px 0;
+}
+.segment .info_text{
+    line-height: 30px;
+}
+
+.segment.bonus_stage{
+    margin:-20px auto;
+    position: relative;
+    width: 250px;
+    height: 250px;
+    box-shadow: none;
+    background-color: transparent;
+}
+.segment.bonus_stage .ribbon{
+    position: absolute;
+    z-index: 99;
+    bottom: -6px;
+    left: 0;
+    right: 0;
+    margin: -5px;
+}
+.segment.bonus_stage > a{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    border-radius: 200px;
+    background-color: #ebebeb;
+    box-shadow: 0 -40px 0 rgba(0,0,0,.03) inset, 0 4px 0 rgba(0,0,0,.2);
+    border: solid 4px #fff;
+    margin: 10px;
+    text-align: center;
+    z-index: 3;
+}
+.segment.bonus_stage:hover > a{
+    border-color:#c24217;
+}
+.segment.bonus_stage > a > svg{
+    width: 90px;
+    height: 150px;
+    fill:#ccc;
+}
+.segment.bonus_stage > a:hover > svg{
+    fill:#c24217;
+}
+.tooltip {
+    font-size: 1.1em;
+}
+.artwork_inner{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.sand svg{
+    stroke:#cea56e;
+    stroke-width:2px;
+    width: 40px;
+}
+.artwork_inner .sand{
+    position: absolute;
+}
+.sand_1{
+    left: 15%;
+    top:7%;
+}
+.sand_2{
+    left: 70%;
+    top:80%;
+}
+.sand_3{
+    left: 80%;
+    top: 25%;
+}
+.sand_3 svg{
+    stroke:#ffe9c2;
+    width: 45px;
+    stroke-width:3px;
+}
+.sand_4{
+    left: 25%;
+    top: 0;
+}
+.sand_4 svg{
+    stroke:#ffe9c2;
+    width: 55px;
+    stroke-width:1.5px;
+}
+.sand_5{
+    left: 13%;
+    top: 80%;
+}
+.starFish{
+    width: 45px;
+    position: absolute;
+    left: 20%;
+    top: 80%;
+}
+.castle{
+    width: 100px;
+    position: absolute;
+    left: 70%;
+    top: 80%;
+}
+.beachBall{
+    width: 75px;
+    position: absolute;
+    left: 20%;
+    top: 70%;
+}
+
+.footer_artwork{
+    padding: 100px 0 50px;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+.footer_artwork img{
+    max-width: 100%;
+    width: auto;
+}
+
+.rainbow_end{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background: url("../img/rainbow_end.svg") no-repeat scroll top center transparent;
+}
+
+/* ==========================================================================
+   Media queries
+   ========================================================================== */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .stage_icon svg{
+        margin-top: 0;
+    }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    /*competition page*/
+    .segment{
+        margin: 0 50px;
+    }
+    .stage_unit{
+        min-height: 150px;
+        line-height: 130px;
+        text-align: right;
+    }
+    .segment .comp_btn, .stage_icon svg{
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .segment .more_link{
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 7px;
+        padding: 7px 0;
+        display: none;
+        z-index: 999;
+    }
+}

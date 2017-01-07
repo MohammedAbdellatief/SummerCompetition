@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>  قائمة الأبطال    </title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/champions2.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!--Ajaxing for SVG Sprite ... placed before body to load icons quick-->
+    <script type="text/javascript">
+        var ajax = new XMLHttpRequest();
+        ajax.open("GET", "img/sprite.svg", true);
+        ajax.send();
+        ajax.onload = function(e) {
+            var div = document.createElement("div");
+            div.innerHTML = ajax.responseText;
+            document.body.insertBefore(div, document.body.childNodes[0]);
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <div id="wrapper" class="toggled transition">
+        <div class="mobile_header">
+            <a class="logo" href="#">
+                <h1 class="text-hide">الاضواء</h1>
+                <svg class="logo_icon" viewBox="0 0 195 95">
+                    <use xlink:href="#aladwaa_logo" />
+                </svg>
+            </a>
+            <a class="navicon-button x" href="#" id="menu-toggle"><div class="navicon"></div> </a>
+        </div>
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper" class="transition">
+            <div class="sidebar-brand">
+                <a href="#">
+                    <h1 class="text-hide">الاضواء</h1>
+                    <svg class="logo_icon" viewBox="0 0 195 95">
+                        <use xlink:href="#aladwaa_logo" />
+                    </svg>
+                </a>
+            </div>
+            <div class="user_area">
+                <a href="#" class="user_info">
+                    <div class="img-circle">
+                        <img src="img/default_user.png" alt=""/>
+                    </div>
+                    <small>اسم المستخدم</small>
+                </a>
+                <div class="mor_container">
+                    <ul class="vert_num list-unstyled">
+                        <li>
+                            <span>المركز</span>
+                            <strong class="num">124</strong>
+                        </li>
+                        <li>
+                            <span>النقاط</span>
+                            <strong class="num">215</strong>
+                        </li>
+                    </ul>
+                    <ul class="horz_num list-unstyled mor_content">
+                        <li>
+                            <span>عدد المشتركين</span>
+                            <strong class="num">121</strong>
+                        </li>
+                        <li>
+                            <span>وسائل المساعدة</span>
+                            <strong class="num">215</strong>
+                        </li>
+                    </ul>
+                </div>
+                <a class="more_link" href="#"> المزيد</a>
+
+            </div>
+            <ul class="sidebar-nav">
+                <li>
+                    <a href="index.html">
+                        <i class="nav_icon">
+                            <svg viewBox="0 0 32 32">
+                                <use xlink:href="#comp_levels" />
+                            </svg>
+                        </i>
+                        <span class="transition">مراحل المسابقة</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="details.html">
+                        <i class="nav_icon">
+                            <svg viewBox="0 0 32 32">
+                                <use xlink:href="#list_icon" />
+                            </svg>
+                        </i>
+                        <span class="transition">تفاصيل  المسابقة</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="active" href="champions2.html">
+                        <i class="nav_icon">
+                            <svg viewBox="0 0 32 32">
+                                <use xlink:href="#meda_icon" />
+                            </svg>
+                        </i>
+                        <span class="transition">قائمة الأبطال </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="prizes.html">
+                        <i class="nav_icon">
+                            <svg viewBox="0 0 158 195">
+                                <use xlink:href="#cup_icon" />
+                            </svg>
+                        </i>
+                        <span class="transition">جوائز  المسابقة</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="social_share">
+                <small>شارك المسابقة مع اصدقائك</small>
+                <a class="facebook_icon" href="#">
+                    <svg viewBox="0 0 14 29">
+                        <use xlink:href="#facbook_icon" />
+                    </svg>
+                </a>
+                <a class="twitter_icon" href="#">
+                    <svg viewBox="0 0 24 20">
+                        <use xlink:href="#twitter_icon" />
+                    </svg>
+                </a>
+                <a class="google_icon" href="#">
+                    <svg viewBox="0 0 24 23">
+                        <use xlink:href="#google_icon" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper" class="transition">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="sponsor">
+                            <a class="closeAd transition" href="#">اغلق الاعلان</a>
+                            <img src="img/sponsor_1.jpg" alt=""/>
+                        </div>
+                    </div>
+                </div>
+                <div class="main_container inner_page">
+                    <div class="row">
+                        <section>
+                            <div class="fiveChamp_cont">
+                                <h2 class="heading_1"><span>  الخمسة الاوائل </span></h2>
+                                <div class="fiveChamp">
+                                    <div class="clmn_unit">
+                                        <span class="transition">اسم المستخدم</span>
+                                        <div class="clmn_info">
+                                            <div>
+                                                <span class="num">1</span>
+                                            </div>
+                                            <div>
+                                                <a href="#" class="user_info">
+                                                    <div class="img-circle">
+                                                        <img src="img/default_user.png" alt="">
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div>
+                                                <div class="points">
+                                                    <span class="num">250</span> <small>نقطة</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <svg viewBox="0 0 116 216">
+                                            <path fill="#FF4949" d="M10 184.8L62.5 216l53.8-31.2V21c0-20.5-11-21-11-21H0s10 0 10 21v163.8z"/>
+                                            <linearGradient id="a" x1="57.9" x2="57.9" y1="1" y2="21.8" gradientUnits="userSpaceOnUse">
+                                                <stop offset=".3" stop-color="#FFF" stop-opacity=".5"/>
+                                                <stop offset=".7" stop-color="#FFF" stop-opacity="0"/>
+                                            </linearGradient>
+                                            <path fill="url(#a)" d="M9.8 21v1h106v-1c0-20.5-10.5-21-10.5-21H0s9.8 0 9.8 21z" opacity=".7"/>
+                                        </svg>
+                                    </div>
+                                    <div class="clmn_unit">
+                                        <span class="transition">اسم المستخدم</span>
+                                        <div class="clmn_info">
+                                            <div>
+                                                <span class="num">1</span>
+                                            </div>
+                                            <div>
+                                                <a href="#" class="user_info">
+                                                    <div class="img-circle">
+                                                        <img src="img/default_user.png" alt="">
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="points">
+                                                <span class="num">250</span> <small>نقطة</small>
+                                            </div>
+                                        </div>
+                                        <svg viewBox="0 0 111 296">
+                                            <path fill="#FE9B44" d="M4.97 264.816L57.512 296l53.8-31.185s.03-223.284.03-243.805S105.346 0 105.346 0H0s4.998.12 4.998 21-.028 243.816-.028 243.816z"/>
+                                            <linearGradient id="a" x1="55.424" x2="55.424" y1="1" y2="21.76" gradientUnits="userSpaceOnUse">
+                                                <stop offset=".292" stop-color="#FFF" stop-opacity=".5"/>
+                                                <stop offset=".72" stop-color="#FFF" stop-opacity="0"/>
+                                            </linearGradient>
+                                            <path fill="url(#a)" d="M4.848 21v1h106v-.99C110.848.49 105.345 0 105.345 0H0s4.848.12 4.848 21z" opacity=".7"/>
+                                        </svg>
+                                    </div>
+                                    <div class="clmn_unit champion">
+                                        <span class="transition">اسم المستخدم</span>
+                                        <div class="clmn_info">
+                                            <div>
+                                                <span class="num">1</span>
+                                            </div>
+                                            <div>
+                                                <a href="#" class="user_info">
+                                                    <div class="img-circle">
+                                                        <img src="img/default_user.png" alt="">
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="points">
+                                                <span class="num">250</span> <small>نقطة</small>
+                                            </div>
+                                        </div>
+                                        <svg viewBox="0 0 127 336">
+                                            <path fill="#71DB00" d="M9.97 304.816L62.512 336l53.8-31.185s.03-262.874.03-283.805S126.346 0 126.346 0H0s9.998.12 9.998 21-.028 283.816-.028 283.816z"/>
+                                            <linearGradient id="a" x1="63.172" x2="63.172" y2="21" gradientUnits="userSpaceOnUse">
+                                                <stop offset=".292" stop-color="#FFF" stop-opacity=".5"/>
+                                                <stop offset=".72" stop-color="#FFF" stop-opacity="0"/>
+                                            </linearGradient>
+                                            <path fill="url(#a)" d="M9.998 21h106.345c.004-20.92 10.002-21 10.002-21H0s9.998.12 9.998 21z" opacity=".7"/>
+                                        </svg>
+                                    </div>
+                                    <div class="clmn_unit cul">
+                                        <span class="transition">اسم المستخدم</span>
+                                        <div class="clmn_info">
+                                            <div>
+                                                <span class="num">1</span>
+                                            </div>
+                                            <div>
+                                                <a href="#" class="user_info">
+                                                    <div class="img-circle">
+                                                        <img src="img/default_user.png" alt="">
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="points">
+                                                <span class="num">250</span> <small>نقطة</small>
+                                            </div>
+                                        </div>
+                                        <svg viewBox="0 0 111 276">
+                                            <path fill="#4A99F2" d="M106.373 244.816L53.83 276 .03 244.816S0 41.53 0 21.01 5.998 0 5.998 0h105.345s-4.998.12-4.998 21 .028 223.816.028 223.816z"/>
+                                            <linearGradient id="a" gradientUnits="userSpaceOnUse" x1="614.247" y1="1" x2="614.247" y2="21.76" gradientTransform="matrix(-1 0 0 1 670.342 0)">
+                                                <stop offset=".292" stop-color="#FFF" stop-opacity=".5"/>
+                                                <stop offset=".72" stop-color="#FFF" stop-opacity="0"/>
+                                            </linearGradient>
+                                            <path opacity=".7" fill="url(#a)" d="M106.847 21v1h-106v-.99C.847.49 5.997 0 5.997 0h105.346s-4.496.12-4.496 21z"/>
+                                        </svg>
+                                    </div>
+                                    <div class="clmn_unit cul">
+                                        <span class="transition">اسم المستخدم</span>
+                                        <div class="clmn_info">
+                                            <div>
+                                                <span class="num">1</span>
+                                            </div>
+                                            <div>
+                                                <a href="#" class="user_info">
+                                                    <div class="img-circle">
+                                                        <img src="img/default_user.png" alt="">
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="points">
+                                                <span class="num">250</span> <small>نقطة</small>
+                                            </div>
+                                        </div>
+                                        <svg viewBox="0 0 116 196">
+                                            <path fill="#A74BF5" d="M106.373 164.816L53.83 196 .03 164.816S0 41.53 0 21.01 10.998 0 10.998 0h105.345s-9.998.12-9.998 21 .028 143.816.028 143.816z"/>
+                                            <linearGradient id="a" gradientUnits="userSpaceOnUse" x1="703.747" y1="1" x2="703.747" y2="21.76" gradientTransform="matrix(-1 0 0 1 762.342 0)">
+                                                <stop offset=".292" stop-color="#FFF" stop-opacity=".5"/>
+                                                <stop offset=".72" stop-color="#FFF" stop-opacity="0"/>
+                                            </linearGradient>
+                                            <path opacity=".7" fill="url(#a)" d="M106.847 21v1h-106v-.99C.847.49 10.997 0 10.997 0h105.346s-9.496.12-9.496 21z"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="leaderBoard_Cont">
+                                <h1 class="heading_2"><span>قائمة الابطال </span></h1>
+                                <ul class="leaderBoard">
+                                    <li>
+                                        <span class="order transition">1</span>
+                                        <a href="#" class="user_info">
+                                            <div class="img-circle">
+                                                <img src="img/default_user.png" alt=""/>
+                                            </div>
+                                            <span>اسم المستخدم</span>
+                                        </a>
+                                        <div class="points"> <span class="num">250</span> <small>نقطة</small> </div>
+                                        <div class="priz transition">
+                                            <i>
+                                                <svg viewBox="0 0 158 195">
+                                                    <use xlink:href="#cup_icon"></use>
+                                                </svg>
+                                            </i>
+                                            <span>iPad Air</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span class="order transition">2</span>
+                                        <a href="#" class="user_info">
+                                            <div class="img-circle">
+                                                <img src="img/default_user.png" alt=""/>
+                                            </div>
+                                            <span>اسم المستخدم</span>
+                                        </a>
+                                        <div class="points"> <span class="num">250</span> <small>نقطة</small> </div>
+                                        <div class="priz transition">
+                                            <i>
+                                                <svg viewBox="0 0 158 195">
+                                                    <use xlink:href="#cup_icon"></use>
+                                                </svg>
+                                            </i>
+                                            <span>Samsung Galaxy</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span class="order transition">3</span>
+                                        <a href="#" class="user_info">
+                                            <div class="img-circle">
+                                                <img src="img/default_user.png" alt=""/>
+                                            </div>
+                                            <span>اسم المستخدم</span>
+                                        </a>
+                                        <div class="points"> <span class="num">250</span> <small>نقطة</small> </div>
+                                        <div class="priz transition">
+                                            <i>
+                                                <svg viewBox="0 0 158 195">
+                                                    <use xlink:href="#cup_icon"></use>
+                                                </svg>
+                                            </i>
+                                            <span>playStation 4</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span class="order transition">4</span>
+                                        <a href="#" class="user_info">
+                                            <div class="img-circle">
+                                                <img src="img/default_user.png" alt=""/>
+                                            </div>
+                                            <span>اسم المستخدم</span>
+                                        </a>
+                                        <div class="points"> <span class="num">250</span> <small>نقطة</small> </div>
+                                        <div class="priz transition">
+                                            <i>
+                                                <svg viewBox="0 0 158 195">
+                                                    <use xlink:href="#cup_icon"></use>
+                                                </svg>
+                                            </i>
+                                            <span>PlayStation 3</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span class="order transition">5</span>
+                                        <a href="#" class="user_info">
+                                            <div class="img-circle">
+                                                <img src="img/default_user.png" alt=""/>
+                                            </div>
+                                            <span>اسم المستخدم</span>
+                                        </a>
+                                        <div class="points"> <span class="num">250</span> <small>نقطة</small> </div>
+                                        <div class="priz transition">
+                                            <i>
+                                                <svg viewBox="0 0 158 195">
+                                                    <use xlink:href="#cup_icon"></use>
+                                                </svg>
+                                            </i>
+                                            <span>iPhone 6</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span class="order transition">6</span>
+                                        <a href="#" class="user_info">
+                                            <div class="img-circle">
+                                                <img src="img/default_user.png" alt=""/>
+                                            </div>
+                                            <span>اسم المستخدم</span>
+                                        </a>
+                                        <div class="points"> <span class="num">250</span> <small>نقطة</small> </div>
+                                        <div class="priz transition">
+                                            <i>
+                                                <svg viewBox="0 0 158 195">
+                                                    <use xlink:href="#cup_icon"></use>
+                                                </svg>
+                                            </i>
+                                            <span>iPad Air</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span class="order transition">7</span>
+                                        <a href="#" class="user_info">
+                                            <div class="img-circle">
+                                                <img src="img/default_user.png" alt=""/>
+                                            </div>
+                                            <span>اسم المستخدم</span>
+                                        </a>
+                                        <div class="points"> <span class="num">250</span> <small>نقطة</small> </div>
+                                        <div class="priz transition">
+                                            <i>
+                                                <svg viewBox="0 0 158 195">
+                                                    <use xlink:href="#cup_icon"></use>
+                                                </svg>
+                                            </i>
+                                            <span>Samsung Galaxy</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span class="order transition">8</span>
+                                        <a href="#" class="user_info">
+                                            <div class="img-circle">
+                                                <img src="img/default_user.png" alt=""/>
+                                            </div>
+                                            <span>اسم المستخدم</span>
+                                        </a>
+                                        <div class="points"> <span class="num">250</span> <small>نقطة</small> </div>
+                                        <div class="priz transition">
+                                            <i>
+                                                <svg viewBox="0 0 158 195">
+                                                    <use xlink:href="#cup_icon"></use>
+                                                </svg>
+                                            </i>
+                                            <span>playStation 4</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span class="order transition">9</span>
+                                        <a href="#" class="user_info">
+                                            <div class="img-circle">
+                                                <img src="img/default_user.png" alt=""/>
+                                            </div>
+                                            <span>اسم المستخدم</span>
+                                        </a>
+                                        <div class="points"> <span class="num">250</span> <small>نقطة</small> </div>
+                                        <div class="priz transition">
+                                            <i>
+                                                <svg viewBox="0 0 158 195">
+                                                    <use xlink:href="#cup_icon"></use>
+                                                </svg>
+                                            </i>
+                                            <span>PlayStation 3</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span class="order transition">10</span>
+                                        <a href="#" class="user_info">
+                                            <div class="img-circle">
+                                                <img src="img/default_user.png" alt=""/>
+                                            </div>
+                                            <span>اسم المستخدم</span>
+                                        </a>
+                                        <div class="points"> <span class="num">250</span> <small>نقطة</small> </div>
+                                        <div class="priz transition">
+                                            <i>
+                                                <svg viewBox="0 0 158 195">
+                                                    <use xlink:href="#cup_icon"></use>
+                                                </svg>
+                                            </i>
+                                            <span>iPhone 6</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <a class="more_link" href="#">المزيد من الابطال</a>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <footer>
+                    <a class="footer_logo" href="#">
+                        <h1 class="text-hide">الاضواء</h1>
+                        <svg class="logo_icon" viewBox="0 0 195 95">
+                            <use xlink:href="#aladwaa_logo" />
+                        </svg>
+                    </a>
+                    <small>جميع الحقوق محفوظة © 2014 </small>
+                </footer>
+            </div>
+            <div class="sponsor_fixed">
+                <img src="img/sponsor2.jpg" alt=""/>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="js/app.js"></script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+</body>
+
+</html>

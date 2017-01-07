@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>  قائمة الأبطال    </title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/champions.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!--Ajaxing for SVG Sprite ... placed before body to load icons quick-->
+    <script type="text/javascript">
+        var ajax = new XMLHttpRequest();
+        ajax.open("GET", "img/sprite.svg", true);
+        ajax.send();
+        ajax.onload = function(e) {
+            var div = document.createElement("div");
+            div.innerHTML = ajax.responseText;
+            document.body.insertBefore(div, document.body.childNodes[0]);
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <div id="wrapper" class="toggled transition">
+        <div class="mobile_header">
+            <a class="logo" href="#">
+                <h1 class="text-hide">الاضواء</h1>
+                <svg class="logo_icon" viewBox="0 0 195 95">
+                    <use xlink:href="#aladwaa_logo" />
+                </svg>
+            </a>
+            <a class="navicon-button x" href="#" id="menu-toggle"><div class="navicon"></div> </a>
+        </div>
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper" class="transition">
+            <div class="sidebar-brand">
+                <a href="#">
+                    <h1 class="text-hide">الاضواء</h1>
+                    <svg class="logo_icon" viewBox="0 0 195 95">
+                        <use xlink:href="#aladwaa_logo" />
+                    </svg>
+                </a>
+            </div>
+            <div class="user_area">
+                <a href="#" class="user_info">
+                    <div class="img-circle">
+                        <img src="img/default_user.png" alt=""/>
+                    </div>
+                    <small>اسم المستخدم</small>
+                </a>
+                <div class="mor_container">
+                    <ul class="vert_num list-unstyled">
+                        <li>
+                            <span>المركز</span>
+                            <strong class="num">124</strong>
+                        </li>
+                        <li>
+                            <span>النقاط</span>
+                            <strong class="num">215</strong>
+                        </li>
+                    </ul>
+                    <ul class="horz_num list-unstyled mor_content">
+                        <li>
+                            <span>عدد المشتركين</span>
+                            <strong class="num">121</strong>
+                        </li>
+                        <li>
+                            <span>وسائل المساعدة</span>
+                            <strong class="num">215</strong>
+                        </li>
+                    </ul>
+                </div>
+                <a class="more_link" href="#"> المزيد</a>
+
+            </div>
+            <ul class="sidebar-nav">
+                <li>
+                    <a href="index.html">
+                        <i class="nav_icon">
+                            <svg viewBox="0 0 32 32">
+                                <use xlink:href="#comp_levels" />
+                            </svg>
+                        </i>
+                        <span class="transition">مراحل المسابقة</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="details.html">
+                        <i class="nav_icon">
+                            <svg viewBox="0 0 32 32">
+                                <use xlink:href="#list_icon" />
+                            </svg>
+                        </i>
+                        <span class="transition">تفاصيل  المسابقة</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="active" href="champions2.html">
+                        <i class="nav_icon">
+                            <svg viewBox="0 0 32 32">
+                                <use xlink:href="#meda_icon" />
+                            </svg>
+                        </i>
+                        <span class="transition">قائمة الأبطال </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="prizes.html">
+                        <i class="nav_icon">
+                            <svg viewBox="0 0 158 195">
+                                <use xlink:href="#cup_icon" />
+                            </svg>
+                        </i>
+                        <span class="transition">جوائز  المسابقة</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="social_share">
+                <small>شارك المسابقة مع اصدقائك</small>
+                <a class="facebook_icon" href="#">
+                    <svg viewBox="0 0 14 29">
+                        <use xlink:href="#facbook_icon" />
+                    </svg>
+                </a>
+                <a class="twitter_icon" href="#">
+                    <svg viewBox="0 0 24 20">
+                        <use xlink:href="#twitter_icon" />
+                    </svg>
+                </a>
+                <a class="google_icon" href="#">
+                    <svg viewBox="0 0 24 23">
+                        <use xlink:href="#google_icon" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper" class="transition">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="sponsor">
+                            <a class="closeAd transition" href="#">اغلق الاعلان</a>
+                            <img src="img/sponsor_1.jpg" alt=""/>
+                        </div>
+                    </div>
+                </div>
+                <div class="main_container inner_page">
+                    <div class="row">
+                        <section id="chart_container" class="chart">
+                            <canvas id="canvas" height="300" width="600"></canvas>
+                            <h5>مقارنة بين تطور مركزك ومركز صديقك وائل المهدي</h5>
+                        </section>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6">
+                            <section class="champ_widget active">
+                                <div class="title_cont">
+                                    <div class="stage_icon">
+                                        <svg class="stage_1" viewBox="0 0 340 255">
+                                            <use xlink:href="#sport_icon" />
+                                        </svg>
+                                    </div>
+                                    <h2>المرحلة الرياضية</h2>
+                                    <span>الأسبوع <span class="num"> 1 </span></span>
+                                </div>
+                                <div class="champ_body">
+                                    <ul class="leaderBoard">
+                                        <li>
+                                            <a href="#" class="user_info">
+                                                <span class="order transition" data-toggle="tooltip" data-placement="top" title="المركز">1</span>
+                                                <div class="img-circle">
+                                                    <img src="img/default_user.png" alt=""/>
+                                                </div>
+                                                <div class="nm_wk">
+                                                    <p>اسم المستخدم</p>
+                                                    <span>الاسبوع الاول</span>
+                                                </div>
+                                            </a>
+                                            <div class="points"> <span class="num">250</span> <small>نقطة</small> </div>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="user_info">
+                                                <span class="order transition" data-toggle="tooltip" data-placement="top" title="المركز">2</span>
+                                                <div class="img-circle">
+                                                    <img src="img/default_user.png" alt=""/>
+                                                </div>
+                                                <div class="nm_wk">
+                                                    <p>اسم المستخدم</p>
+                                                    <span>الاسبوع الاول</span>
+                                                </div>
+                                            </a>
+                                            <div class="points"> <span class="num">250</span> <small>نقطة</small> </div>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="user_info">
+                                                <span class="order transition" data-toggle="tooltip" data-placement="top" title="المركز">3</span>
+                                                <div class="img-circle">
+                                                    <img src="img/default_user.png" alt=""/>
+                                                </div>
+                                                <div class="nm_wk">
+                                                    <p>اسم المستخدم</p>
+                                                    <span>الاسبوع الاول</span>
+                                                </div>
+                                            </a>
+                                            <div class="points"> <span class="num">250</span> <small>نقطة</small> </div>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="user_info">
+                                                <span class="order transition" data-toggle="tooltip" data-placement="top" title="المركز">4</span>
+                                                <div class="img-circle">
+                                                    <img src="img/default_user.png" alt=""/>
+                                                </div>
+                                                <div class="nm_wk">
+                                                    <p>اسم المستخدم</p>
+                                                    <span>الاسبوع الاول</span>
+                                                </div>
+                                            </a>
+                                            <div class="points"> <span class="num">250</span> <small>نقطة</small> </div>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="user_info">
+                                                <span class="order transition" data-toggle="tooltip" data-placement="top" title="المركز">5</span>
+                                                <div class="img-circle">
+                                                    <img src="img/default_user.png" alt=""/>
+                                                </div>
+                                                <div class="nm_wk">
+                                                    <p>اسم المستخدم</p>
+                                                    <span>الاسبوع الاول</span>
+                                                </div>
+                                            </a>
+                                            <div class="points"> <span class="num">250</span> <small>نقطة</small> </div>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="user_info">
+                                                <span class="order transition" data-toggle="tooltip" data-placement="top" title="المركز">6</span>
+                                                <div class="img-circle">
+                                                    <img src="img/default_user.png" alt=""/>
+                                                </div>
+                                                <div class="nm_wk">
+                                                    <p>اسم المستخدم</p>
+                                                    <span>الاسبوع الاول</span>
+                                                </div>
+                                            </a>
+                                            <div class="points"> <span class="num">250</span> <small>نقطة</small> </div>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="user_info">
+                                                <span class="order transition" data-toggle="tooltip" data-placement="top" title="المركز">7</span>
+                                                <div class="img-circle">
+                                                    <img src="img/default_user.png" alt=""/>
+                                                </div>
+                                                <div class="nm_wk">
+                                                    <p>اسم المستخدم</p>
+                                                    <span>الاسبوع الاول</span>
+                                                </div>
+                                            </a>
+                                            <div class="points"> <span class="num">250</span> <small>نقطة</small> </div>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="user_info">
+                                                <span class="order transition" data-toggle="tooltip" data-placement="top" title="المركز">8</span>
+                                                <div class="img-circle">
+                                                    <img src="img/default_user.png" alt=""/>
+                                                </div>
+                                                <div class="nm_wk">
+                                                    <p>اسم المستخدم</p>
+                                                    <span>الاسبوع الاول</span>
+                                                </div>
+                                            </a>
+                                            <div class="points"> <span class="num">250</span> <small>نقطة</small> </div>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="user_info">
+                                                <span class="order transition" data-toggle="tooltip" data-placement="top" title="المركز">9</span>
+                                                <div class="img-circle">
+                                                    <img src="img/default_user.png" alt=""/>
+                                                </div>
+                                                <div class="nm_wk">
+                                                    <p>اسم المستخدم</p>
+                                                    <span>الاسبوع الاول</span>
+                                                </div>
+                                            </a>
+                                            <div class="points"> <span class="num">250</span> <small>نقطة</small> </div>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="user_info">
+                                                <span class="order transition" data-toggle="tooltip" data-placement="top" title="المركز">10</span>
+                                                <div class="img-circle">
+                                                    <img src="img/default_user.png" alt=""/>
+                                                </div>
+                                                <div class="nm_wk">
+                                                    <p>اسم المستخدم</p>
+                                                    <span>الاسبوع الاول</span>
+                                                </div>
+                                            </a>
+                                            <div class="points"> <span class="num">250</span> <small>نقطة</small> </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </section>
+                            <section class="champ_widget">
+                                <div class="title_cont">
+                                    <div class="stage_icon">
+                                        <svg viewBox="0 0 129 82">
+                                            <use xlink:href="#computer_icon" />
+                                        </svg>
+                                    </div>
+                                    <h2> مرحلة مهارات الحاسب الآلي </h2>
+                                    <span>الأسبوع <span class="num"> 2 </span></span>
+                                </div>
+                                <div class="champ_body">
+                                    <p class="msg">لم يتم تحديد النتيجة بعد... اعلان النتيجة يوم 16 اغسطس</p>
+                                </div>
+                            </section>
+                            <section class="champ_widget">
+                                <div class="title_cont">
+                                    <div class="stage_icon">
+                                        <svg viewBox="0 0 67 39">
+                                            <use xlink:href="#video_icon" />
+                                        </svg>
+                                    </div>
+                                    <h2> مرحلة مقاطع الفيديو 1 </h2>
+                                    <span>الأسبوع <span class="num"> 3 </span></span>
+                                </div>
+                                <div class="champ_body">
+                                    <p class="msg">لم تبدا المرحلة بعد... تبدا 15 يوليو</p>
+                                </div>
+                            </section>
+                            <section class="champ_widget">
+                                <div class="title_cont">
+                                    <div class="stage_icon">
+                                        <svg class="stage_2" viewBox="0 0 120 100">
+                                            <use xlink:href="#IQ_icon" />
+                                        </svg>
+                                    </div>
+                                    <h2> مرحلة اختبار الذكاء 1 </h2>
+                                    <span>الأسبوع <span class="num"> 4 </span></span>
+                                </div>
+                                <div class="champ_body">
+                                    <p class="msg">لم تبدا المرحلة بعد... تبدا 15 يوليو</p>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <section class="champ_widget fb_widget">
+                                <div class="title_cont">
+                                    <div class="stage_icon">
+                                        <svg class="fb" viewBox="0 0 14 29">
+                                            <use xlink:href="#facbook_icon" />
+                                        </svg>
+                                    </div>
+                                    <h2>أصدقاء فيسبوك </h2>
+                                    <span>أصدقائي <span class="num"> 1 </span></span>
+                                </div>
+                                <div class="champ_body">
+                                    <ul class="leaderBoard">
+                                        <li>
+                                            <a href="#" class="user_info">
+                                                <span class="order transition" data-toggle="tooltip" data-placement="top" title="المركز">1</span>
+                                                <div class="img-circle">
+                                                    <img src="img/default_user.png" alt=""/>
+                                                </div>
+                                                <div class="nm_wk">
+                                                    <p>اسم المستخدم</p>
+                                                    <span>الاسبوع الاول</span>
+                                                </div>
+                                            </a>
+                                            <div class="points"> <span class="num">250</span> <small>نقطة</small> </div>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="user_info">
+                                                <span class="order transition" data-toggle="tooltip" data-placement="top" title="المركز">1</span>
+                                                <div class="img-circle">
+                                                    <img src="img/default_user.png" alt=""/>
+                                                </div>
+                                                <div class="nm_wk">
+                                                    <p>اسم المستخدم</p>
+                                                    <span>الاسبوع الاول</span>
+                                                </div>
+                                            </a>
+                                            <div class="points"> <span class="num">250</span> <small>نقطة</small> </div>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="user_info">
+                                                <span class="order transition" data-toggle="tooltip" data-placement="top" title="المركز">1</span>
+                                                <div class="img-circle">
+                                                    <img src="img/default_user.png" alt=""/>
+                                                </div>
+                                                <div class="nm_wk">
+                                                    <p>اسم المستخدم</p>
+                                                    <span>الاسبوع الاول</span>
+                                                </div>
+                                            </a>
+                                            <div class="points"> <span class="num">250</span> <small>نقطة</small> </div>
+                                        </li>
+                                    </ul>
+                                    <p class="msg"></p>
+                                </div>
+                            </section>
+                            <section class="champ_widget">
+                                <div class="title_cont">
+                                    <div class="stage_icon">
+                                        <svg class="stage_3" viewBox="0 0 125 80">
+                                            <use xlink:href="#nationalGeographic" />
+                                        </svg>
+                                    </div>
+                                    <h2> مرحلة مسابقة ناشيونال جيوجرافيك </h2>
+                                    <span>الأسبوع <span class="num"> 5 </span></span>
+                                </div>
+                                <div class="champ_body">
+                                    <p class="msg">لم تبدا المرحلة بعد... تبدا 15 يوليو</p>
+                                </div>
+                            </section>
+                            <section class="champ_widget">
+                                <div class="title_cont">
+                                    <div class="stage_icon">
+                                        <svg viewBox="0 0 67 39">
+                                            <use xlink:href="#video_icon" />
+                                        </svg>
+                                    </div>
+                                    <h2> مرحلة مقاطع الفيديو 2 </h2>
+                                    <span>الأسبوع <span class="num"> 6 </span></span>
+                                </div>
+                                <div class="champ_body">
+                                    <p class="msg">لم تبدا المرحلة بعد... تبدا 15 يوليو</p>
+                                </div>
+                            </section>
+                            <section class="champ_widget">
+                                <div class="title_cont">
+                                    <div class="stage_icon">
+                                        <svg class="stage_2" viewBox="0 0 120 100">
+                                            <use xlink:href="#IQ_icon" />
+                                        </svg>
+                                    </div>
+                                    <h2> مرحلة اختبار الذكاء 2 </h2>
+                                    <span>الأسبوع <span class="num"> 7 </span></span>
+                                </div>
+                                <div class="champ_body">
+                                    <p class="msg">لم تبدا المرحلة بعد... تبدا 15 يوليو</p>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+                <footer>
+                    <a class="footer_logo" href="#">
+                        <h1 class="text-hide">الاضواء</h1>
+                        <svg class="logo_icon" viewBox="0 0 195 95">
+                            <use xlink:href="#aladwaa_logo" />
+                        </svg>
+                    </a>
+                    <small>جميع الحقوق محفوظة © 2014 </small>
+                </footer>
+            </div>
+            <div class="sponsor_fixed">
+                <img src="img/sponsor2.jpg" alt=""/>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/Chart.Core.js"></script>
+    <script type="text/javascript" src="js/Chart.Line.js"></script>
+    <script>
+        var randomScalingFactor = function(){ return Math.round(Math.random()*100)};
+        var lineChartData = {
+            labels : ["الاسبوع 1","الاسبوع 2","الاسبوع 3","الاسبوع 4","الاسبوع 5","الاسبوع 6","الاسبوع 7", "الاسبوع 8"],
+            datasets : [
+                {
+                    label: "My Second dataset",
+                    fillColor : "rgba(151,187,205,0.2)",
+                    strokeColor : "rgba(151,187,205,1)",
+                    pointColor : "rgba(151,187,205,1)",
+                    pointStrokeColor : "#fff",
+                    pointHighlightFill : "#fff",
+                    pointHighlightStroke : "rgba(151,187,205,1)",
+                    data : [randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor()]
+                }
+            ]
+
+        }
+
+        window.onload = function(){
+            var ctx = document.getElementById("canvas").getContext("2d");
+            window.myLine = new Chart(ctx).Line(lineChartData, {
+                responsive: true
+            });
+        }
+
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+</body>
+
+</html>

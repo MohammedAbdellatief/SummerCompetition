@@ -1,0 +1,211 @@
+/*details page
+==================*/
+.leaderBoard{
+    list-style-type: none;
+    padding: 20px 60px 0 0;
+}
+.leaderBoard li{
+    padding: 10px 0;
+    border-bottom: dotted 1px #eee;
+    position: relative;
+}
+.leaderBoard .user_info{
+    text-align: right;
+    display: inline-block;
+    font-family: 'DinNextBold';
+}
+.leaderBoard .user_info:hover{
+    text-decoration: none;
+}
+.leaderBoard .img-circle{
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+    box-shadow: 0 0 0 1px rgba(0,0,0,.1) ;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.leaderBoard .points{
+    display: inline-block;
+    vertical-align: middle;
+    float: left;
+    padding: 10px 0;
+}
+.leaderBoard .order{
+    display: inline-block;
+    background-color: #fff;
+    border: solid 2px #ccc;
+    border-radius: 50px;
+    color: #080808;
+    text-align: center;
+    vertical-align: middle;
+    float: none;
+    padding: 12px;
+    line-height: 8px;
+    position: absolute;
+    font-weight: bold;
+    font-size: 16px;
+    margin-left: 15px;
+    left: 100%;
+ }
+.leaderBoard li:hover .order{
+    background-color: #dc4b1a;
+    border-color:#dc4b1a;
+    color: #fff;
+}
+.leaderBoard li .order:after{
+    content: '';
+    position: absolute;
+    left: 15px;
+    width: 2px;
+    height: 50px;
+    background-color: #ccc;
+    margin: auto;
+    top: 34px;
+}
+.leaderBoard li:last-child .order:after{
+    display: none;
+}
+.leaderBoard .priz{
+    border: solid #eee 2px;
+    border-radius: 50px;
+    display: none;
+    vertical-align: middle;
+    padding: 5px 15px;
+    margin: 0 5%;
+    float: left;
+    visibility: hidden;
+    opacity: 0;
+}
+.leaderBoard li:hover .priz{
+    visibility: visible;
+    opacity: 1;
+}
+.leaderBoard .priz i, .leaderBoard .priz span{
+    display: inline-block;
+    padding: 0 3px;
+    color:#dc4b1a ;
+}
+.leaderBoard .priz svg{
+    height: 20px;
+}
+.leaderBoard_Cont .more_link{
+    display: block;
+    text-align: center;
+    background-color: #eee;
+    font-size: 14px;
+}
+.leaderBoard_Cont .more_link:hover{
+    background-color:#dc4b1a ;
+    color: #fff;
+    text-decoration: none;
+}
+
+/*five champ*/
+.fiveChamp_cont{
+    display: none;
+}
+.fiveChamp{
+    padding:40px 10px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items:flex-start;
+}
+.fiveChamp .clmn_unit{
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    margin: 0 2%;
+}
+.fiveChamp .clmn_unit > span{
+    position: absolute;
+    top: -35px;
+    left: 0;
+    right: 0;
+    visibility: hidden;
+    opacity: 0;
+}
+.fiveChamp .clmn_unit:hover > span{
+    visibility:visible;
+    opacity: 1;
+}
+.fiveChamp .clmn_info{
+    position: absolute;
+    z-index: 1;
+    padding-left: 5%;
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-flow: column nowrap;
+    margin-top: 10px;
+}
+.fiveChamp .cul .clmn_info{
+    padding-left: 0;
+    padding-right: 5%;
+}
+.fiveChamp .clmn_info > div{
+    flex-grow:1;
+    vertical-align: middle;
+}
+.fiveChamp svg{
+    width: 90%;
+    margin: auto;
+}
+.fiveChamp .champion svg {
+    width: 100%;
+}
+.fiveChamp .champion .clmn_info{
+    padding: 0 3%;
+}
+.fiveChamp .user_info{
+    width: 55%;
+    margin: auto;
+    display: inline-block;
+    vertical-align: middle;
+}
+.fiveChamp .num{
+    vertical-align: middle;
+    color: rgba(255,255,255,.5);
+    font-size: 36px;
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.1);
+}
+.fiveChamp .img-circle{
+    box-shadow: 0 3px 0 rgba(0,0,0,.15);
+}
+.fiveChamp .points{
+    color: #fff;
+    font-size: 15px;
+}
+.fiveChamp .points .num{
+    color: #fff;
+    font-size: 19px;
+    display: block;
+    line-height: normal;
+}
+.fiveChamp .points small{
+    display: block;
+    line-height: normal;
+}
+/* ==========================================================================
+   Media queries
+   ========================================================================== */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .leaderBoard .priz{
+        display: inline-block;
+    }
+    .fiveChamp_cont{
+        display: block;
+    }
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+}

@@ -1,0 +1,105 @@
+/*Prize page
+==================*/
+.segment .more_link{
+    margin: auto;
+    text-align: center;
+    display: block;
+    clear: both;
+}
+.segment:hover .more_link{
+    display: block;
+}
+.segment .mor_container{
+    height: 0;
+    padding: 0;
+}
+.segment .mor_content{
+    background-color: #FFE;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 15px;
+}
+.arrows{
+    width: 50px;
+    height: 25px;
+}
+section.prize_item {
+    background-color: #f7f7f7;
+    padding:0;
+    box-shadow: 0 1px 1px rgba(0,0,0,.1);
+}
+section.prize_item .stage_icon{
+    text-align: center;
+}
+section.prize_item .stage_icon img {
+    max-width: 100%;
+    width: auto;
+}
+section.prize_item h1 {
+    font-family: "JF Flat Regular";
+    font-size: 38px;
+}
+section.prize_item ul {
+    margin: 10px 0;
+    padding-right: 15px;
+    list-style-type: square;
+    font-size: 11px;
+    color: #4c5766;
+    line-height: normal;
+}
+section.prize_item p {
+    margin: 0;
+    padding: 0;
+}
+.pos_num_cont{
+    text-align: center;
+    margin-top: 0;
+    transform: none;
+}
+.pos_num_cont .num {
+    background-color: #fff;
+    border: solid 3px #ffae23;
+    border-radius: 50px;
+    display: inline-block;
+    margin: auto;
+    width: 60px;
+    height: 60px;
+    line-height: 50px;
+    font-size: 30px;
+    color: #dc4b1a;
+    text-shadow: 0 2px 0 rgba(0,0,0,.07);
+    box-shadow: 0 5px 0 rgba(0,0,0,.03) inset;
+    position: relative;
+}
+.pos_num_cont span{
+    display: block;
+    color: #ffae23;
+    font-size: 11px;
+    line-height: normal;
+}
+.pos_num_cont .icon-bar{
+    width: 45px;
+    height: 38px;
+    margin: auto;
+    display: block;
+}
+
+
+/* ==========================================================================
+   Media queries
+   ========================================================================== */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .pos_num_cont{
+        text-align: center;
+        margin-top: 50%;
+        transform: translateY(-25%);
+    }
+}
